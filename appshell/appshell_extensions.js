@@ -40,7 +40,13 @@ if (!appshell.fs) {
 if (!appshell.app) {
     appshell.app = {};
 }
+
 (function () {    
+    native function ParseGrip();
+    appshell.parse = function(code, callback) {
+        return ParseGrip(callback, code);
+    }
+
     // Error values. These MUST be in sync with the error values
     // at the top of appshell_extensions_platform.h.
     

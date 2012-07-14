@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>brackets.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>io.brackets.appshell</string>
+	<string>org.grip-lang.ide</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

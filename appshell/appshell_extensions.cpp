@@ -23,6 +23,7 @@
 
 #include "appshell_extensions.h"
 #include "appshell_extensions_platform.h"
+#include "libgrip.h"
 
 namespace appshell_extensions {
 
@@ -98,7 +99,16 @@ public:
 
             // Set response args for this function
             responseArgs->SetList(2, selectedFiles);
-        } else if (message_name == "ReadDir") {
+		} else if (message_name == "ParseGrip") {
+            if (argList->GetSize() != 2 ||
+                argList->GetType(1) != VTYPE_STRING) {
+                error = ERR_INVALID_PARAMS;
+            }
+            if (error == NO_ERROR) {
+                int parsed = grip_parse("some code here");
+                responseArgs->SetInt(2, parsed);
+            }
+		} else if (message_name == "ReadDir") {
             // Parameters:
             //  0: int32 - callback id
             //  1: string - directory path

@@ -34,4 +34,8 @@ appshell/.DS_Store
 # Add README
 !README.md
 
+# grip projects
+!grip-lang
+!grip-editor
+
 # That's all!

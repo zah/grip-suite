@@ -4,7 +4,7 @@
 
 {
   'variables': {
-    'appname': 'Brackets',
+    'appname': 'Grip',
     'mac_sdk': '10.6',
     'chromium_code': 1,
     'conditions': [
@@ -32,6 +32,7 @@
       ],
       'include_dirs': [
         '.',
+        './grip-lang/lib',
       ],
       'sources': [
         '<@(includes_common)',
@@ -48,6 +49,7 @@
         'appshell/mac/Info.plist',
       ],
       'xcode_settings': {
+        'COPY_PHASE_STRIP': 'NO',
         'INFOPLIST_FILE': 'appshell/mac/Info.plist',
         # Necessary to avoid an "install_name_tool: changing install names or
         # rpaths can't be redone" error.
@@ -55,8 +57,18 @@
         # Target build path.
         'SYMROOT': 'xcodebuild',
       },
+      'actions': [
+        {
+          'action_name': 'libgrip',
+          'message': "Building libgrip",
+          'inputs': [],
+          'outputs': [ 'grip-lang/compiler/liblibgrip.dylib', 'run-always' ],
+          'action': [ 'bash', '-l', 'grip-lang/compiler/buildlibgrip.sh' ]
+        }
+      ],
       'conditions': [
         ['OS=="win"', {
+          'variables': { 'dllext': ".dll" },
           'configurations': {
             'Common_Base': {
               'msvs_configuration_attributes': {
@@ -78,7 +90,8 @@
               '-lrpcrt4.lib',
               '-lopengl32.lib',
               '-lglu32.lib',
-              '-llib/$(ConfigurationName)/libcef.lib'
+              '-llib/$(ConfigurationName)/libcef.lib',
+              '-lgrip-lang/compiler/liblibgrip.lib'
             ],
           },
           'sources': [
@@ -87,6 +100,7 @@
           ],
         }],
         [ 'OS=="mac"', {
+          'variables': { 'dllext': ".dylib" },
           'product_name': '<(appname)',
           'dependencies': [
             'appshell_helper_app',
@@ -99,6 +113,10 @@
                 '$(CONFIGURATION)/libcef.dylib',
                 '$(CONFIGURATION)/ffmpegsumo.so',
               ],
+            },
+            {
+              'destination': '<(PRODUCT_DIR)/<(appname).app/Contents/MacOS/',
+              'files': ['grip-lang/compiler/liblibgrip.dylib']
             },
             {
               # Add other resources to the bundle.
@@ -147,6 +165,7 @@
             'libraries': [
               '$(SDKROOT)/System/Library/Frameworks/AppKit.framework',
               '$(CONFIGURATION)/libcef.dylib',
+              'grip-lang/compiler/liblibgrip.dylib'
             ],
           },
           'sources': [
@@ -216,11 +235,13 @@
           ],
           'include_dirs': [
             '.',
+            './grip-lang/lib',
           ],
           'link_settings': {
             'libraries': [
               '$(SDKROOT)/System/Library/Frameworks/AppKit.framework',
               '$(CONFIGURATION)/libcef.dylib',
+              'grip-lang/compiler/liblibgrip.dylib',
             ],
           },
           'sources': [
@@ -256,6 +277,9 @@
                 '-change',
                 '@executable_path/libcef.dylib',
                 '@executable_path/../../../../Frameworks/Chromium Embedded Framework.framework/Libraries/libcef.dylib',
+                '-change',
+                '@executable_path/liblibgrip.dylib',
+                '@executable_path/../../../../MacOS/liblibgrip.dylib',
                 '${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}'
               ],
             },

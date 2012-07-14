@@ -1,0 +1,6 @@
+[submodule "grip-lang"]
+	path = grip-lang
+	url = git@github.com:zah/grip-lang
+[submodule "grip-editor"]
+	path = grip-editor
+	url = git@github.com:zah/grip-editor

@@ -3,17 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		D99FD7130AD818306AEF66A8 /* Grip Support */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 43FAE2C83C367129D58E25D5 /* Build configuration list for PBXAggregateTarget "Grip Support" */;
+			buildPhases = (
+				C025827BB9B39120B2513267 /* Action "libgrip" */,
+			);
+			dependencies = (
+				73F0585B6DC79B8C94A2A069 /* PBXTargetDependency */,
+				C0496EA26827AF7DD3270BB3 /* PBXTargetDependency */,
+			);
+			name = "Grip Support";
+			productName = "Grip Support";
+		};
 		F50A1D0F6933B94D3F4B8B15 /* All */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = D79895D2F40CCBC80ED2A92B /* Build configuration list for PBXAggregateTarget "All" */;
 			buildPhases = (
 			);
 			dependencies = (
-				9821FE417F117A2AAAD77AA8 /* PBXTargetDependency */,
+				4ECABF77131B881A38DD1458 /* PBXTargetDependency */,
 				8431C02624882CFEF805BF1F /* PBXTargetDependency */,
 				88009BCE86F185D1AE803190 /* PBXTargetDependency */,
 			);
@@ -24,21 +37,28 @@
 
 /* Begin PBXBuildFile section */
 		00C27F38FC76E28FEC755DBA /* frame_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = B617EB0714F29F881C46BCC3 /* frame_ctocpp.cc */; };
+		0306F82D848A69C5992DE1F4 /* ffmpegsumo.so in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */ = {isa = PBXBuildFile; fileRef = 960AF2FA67AD34478B16E1FE /* ffmpegsumo.so */; };
 		03BDFD1ACECA6DCDFD8BFFCD /* binary_value_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8F11150C50C71F0939C665D5 /* binary_value_ctocpp.cc */; };
+		05F983DB5EDD5084379C3A3D /* appshell_extensions.js in Resources */ = {isa = PBXBuildFile; fileRef = F7EB475CDCCC2A30AF8D4A0C /* appshell_extensions.js */; };
 		091CBE5C73CFE62ED50A6287 /* context_menu_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = C878B65EF867D0D8E3576FB0 /* context_menu_handler_cpptoc.cc */; };
-		0A68B60BC08DCC934A1FC716 /* Resources in Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/ */ = {isa = PBXBuildFile; fileRef = E1DBBBAE0A9D41B0609983D5 /* Resources */; };
+		0D924E2F753613F1DD457273 /* client_app_delegates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC32618A1323B894948367CF /* client_app_delegates.cpp */; };
 		0FB773DE20414F1BFE84DFBC /* v8handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C2FC45C53580743DDD98F /* v8handler_cpptoc.cc */; };
 		0FCECED4F9DF117B8DCDF8BA /* urlrequest_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2652CE5DE434A7F76318E0E1 /* urlrequest_ctocpp.cc */; };
+		120EB29BD16DF0BFA6CDC5AE /* appshell_extensions_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95AC844F2FA9D42891B3B718 /* appshell_extensions_mac.mm */; };
 		1480427BE493871EC039CDD8 /* process_helper_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73BD18BBE14A6CD1DE6E5E57 /* process_helper_mac.cpp */; };
 		14A0A411118597770F78C17B /* cef_xml_object.cc in Sources */ = {isa = PBXBuildFile; fileRef = D9EB25BB75762E0033E42719 /* cef_xml_object.cc */; };
+		14E417D3A5491063520C50CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDE848ADF50901E338C0DE5 /* MainMenu.xib */; };
+		153479F320FB9B044E5B1B74 /* liblibgrip.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4FDC490A78DB1F63C53FCE /* liblibgrip.dylib */; };
+		1A8DD85BA786D67C38885B47 /* string_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D96382DCC9DC64414EC6E05 /* string_util.cpp */; };
 		1AB27473413947A4EE427E3B /* jsdialog_callback_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = DA98470EE1D40A74C58B0661 /* jsdialog_callback_ctocpp.cc */; };
 		1EBE59F49B66695AC387FE1A /* list_value_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = A167053C08AFAC8B2282066C /* list_value_ctocpp.cc */; };
+		1F874AE70E1110AAA305C213 /* cefclient_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E45EB29CAA66453661C6 /* cefclient_mac.mm */; };
 		1F9E95E79693838877B17984 /* read_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B1C35B41FBDC6DDEFF52E /* read_handler_cpptoc.cc */; };
 		200B53A53514E3524AA94819 /* request_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 85F7533AF3C47F71CA9FDFC6 /* request_ctocpp.cc */; };
 		21B5ED1078AB7D9A8BA1EF18 /* callback_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2AB635C6500A7B6F5FF96611 /* callback_ctocpp.cc */; };
 		23BF864002E7B82AF22F8369 /* dictionary_value_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 140DD159344CE70AA8B70B53 /* dictionary_value_ctocpp.cc */; };
 		260B3DA94CD1F852F773351D /* client_handler_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = E93F80CFC491C3C09AFDD87B /* client_handler_mac.mm */; };
-		2CC364D7509BFD402CACB9ED /* cefclient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 522C920B68963035E6CE38FE /* cefclient.cpp */; };
+		26F26B5E49BC595EE0105BB7 /* resource_util_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58B75C30D7A89FCDAE335C06 /* resource_util_mac.mm */; };
 		2FC1B1F04A45D6FA33E046D8 /* task_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6A80C5452B9D1E461C7707CD /* task_cpptoc.cc */; };
 		2FD9C367A77EDCFBAA4E4A65 /* string_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D96382DCC9DC64414EC6E05 /* string_util.cpp */; };
 		3104F99B4CEBEDBBFD06C7DB /* domdocument_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0A791B4B90657D6A34CBE325 /* domdocument_ctocpp.cc */; };
@@ -46,41 +66,37 @@
 		349949CFEEF5D745D209CB5E /* auth_callback_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 43AAF91C2A60F3BE2BB7B094 /* auth_callback_ctocpp.cc */; };
 		3706B2381014C7FA37594CBD /* domevent_listener_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3B73D06FB8C58B80762CDF5E /* domevent_listener_cpptoc.cc */; };
 		37732F00B07028873199D832 /* client_app_delegates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC32618A1323B894948367CF /* client_app_delegates.cpp */; };
-		38CD0C26616461EA4317F161 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A90B310A1CB19C285E2E13FE /* libcef_dll_wrapper.a */; };
-		3ADEE14239E19398B287532E /* libcef.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B65894845851B9D3DEE6BD03 /* libcef.dylib */; };
 		3C88DFF3097CBE1E8D1FA662 /* resource_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = BD8E873CE33AB866D81F7634 /* resource_handler_cpptoc.cc */; };
-		3DECED27298A79759F892390 /* resource_util_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58B75C30D7A89FCDAE335C06 /* resource_util_mac.mm */; };
-		404420811CFE6F0A01D86D6E /* string_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D96382DCC9DC64414EC6E05 /* string_util.cpp */; };
+		3D3804E52102FEE60F28255A /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A90B310A1CB19C285E2E13FE /* libcef_dll_wrapper.a */; };
 		42BAE943ABD4C19830BB5011 /* zip_reader_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4C445BA8F89BC49321A95ABD /* zip_reader_ctocpp.cc */; };
-		44E07FA909A2EC86622D67D8 /* client_app_delegates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC32618A1323B894948367CF /* client_app_delegates.cpp */; };
-		46D9B49225F466566EE3711B /* Brackets Helper.app in Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACCBD564EAD4B712DDAC80E /* Brackets Helper.app */; };
-		486D6CF9DA73142E734968DC /* client_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7F32E5943867A24A58C24C9 /* client_handler.cpp */; };
 		4EA17B24D95425778B575FE9 /* web_plugin_info_visitor_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7892D5DE433CE5794C1C52FC /* web_plugin_info_visitor_cpptoc.cc */; };
 		50181DE4B5E76F3D4A8AAF31 /* v8exception_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = E8875422733185EBC5AB471B /* v8exception_ctocpp.cc */; };
 		5164086404B14363CC7BCBE0 /* libcef_dll_wrapper2.cc in Sources */ = {isa = PBXBuildFile; fileRef = C36233CB23734A273D2D0F79 /* libcef_dll_wrapper2.cc */; };
 		5241E88E7E6435DE2C0FE500 /* transfer_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9211C221356E0B082C4816A /* transfer_util.cpp */; };
+		5457316332862D046CF65CD5 /* libcef.dylib in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */ = {isa = PBXBuildFile; fileRef = F1989B67661244ED4B756EE5 /* libcef.dylib */; };
 		5B03FFBE66C7EE2CDF6B714E /* client_app_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC33590C4ECC150F9CD14493 /* client_app_mac.mm */; };
-		5B112E85C066A8D1E8EF68A4 /* appshell_extensions_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95AC844F2FA9D42891B3B718 /* appshell_extensions_mac.mm */; };
 		5D64F40FE8FDDD434C26DCC8 /* download_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1C2AD7D46F7259207D0ABFC5 /* download_handler_cpptoc.cc */; };
 		61A09DAC3E367C528215AB8B /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A90B310A1CB19C285E2E13FE /* libcef_dll_wrapper.a */; };
 		6479369F5007A233EABEB8A0 /* appshell_extensions_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95AC844F2FA9D42891B3B718 /* appshell_extensions_mac.mm */; };
+		64A296DDF7E4B5E6352D302A /* client_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C262FF082FED71CE8963FDD5 /* client_app.cpp */; };
 		651022340D1643D1DE957102 /* post_data_element_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 235412E5669505A9DD7C2303 /* post_data_element_ctocpp.cc */; };
 		655F9692081BDAAB642B28DC /* render_process_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8ABFDFF093F6B71602851374 /* render_process_handler_cpptoc.cc */; };
 		68315E73A84EA42E8764D9C0 /* keyboard_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = E3966DDA7CAEA8958985C6FE /* keyboard_handler_cpptoc.cc */; };
-		6B295097B29E8FB628815A1B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDE848ADF50901E338C0DE5 /* MainMenu.xib */; };
+		6A3EA7DD93937B9D2E054281 /* client_handler_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = E93F80CFC491C3C09AFDD87B /* client_handler_mac.mm */; };
 		6C2F2BB683E199305CE323A9 /* context_menu_params_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 68E14BF504B405135F32C878 /* context_menu_params_ctocpp.cc */; };
-		70FCD219696DE09CE668774D /* libcef.dylib in Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */ = {isa = PBXBuildFile; fileRef = F1989B67661244ED4B756EE5 /* libcef.dylib */; };
+		6FB95719839B3AFEBD72876E /* liblibgrip.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4FDC490A78DB1F63C53FCE /* liblibgrip.dylib */; };
 		71FF2B0DBA7A3D00E14CFAF3 /* load_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 02CADD4DAEB5003DEC0C3285 /* load_handler_cpptoc.cc */; };
 		725B1EBA8DDE20FB4F3825ED /* cookie_visitor_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = B6A77EE456259DB56C750847 /* cookie_visitor_cpptoc.cc */; };
-		7418E8ADE705BE89705C7438 /* client_handler_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = E93F80CFC491C3C09AFDD87B /* client_handler_mac.mm */; };
 		76375CD1E1E90E083AD6CF72 /* geolocation_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = D54DFF5854667E9D9399E732 /* geolocation_handler_cpptoc.cc */; };
 		76AF1C07796FF8E7CF09390C /* resource_bundle_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5EB154496C1FDAE39862F41E /* resource_bundle_handler_cpptoc.cc */; };
 		77055A9A72E9A28ECA77F852 /* jsdialog_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = D673FDFE97C9F7A218888C8D /* jsdialog_handler_cpptoc.cc */; };
 		77B44090879F7B257B0A0CEB /* xml_reader_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 701C240F17A4F8EFFCC847A2 /* xml_reader_ctocpp.cc */; };
+		7A0FA9C14EA926F7676D8F83 /* client_app_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC33590C4ECC150F9CD14493 /* client_app_mac.mm */; };
+		7CD90BFCC891646B1A085A41 /* Resources in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/ */ = {isa = PBXBuildFile; fileRef = E1DBBBAE0A9D41B0609983D5 /* Resources */; };
 		7D778B75960C8A8014CAF8D3 /* urlrequest_client_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1638377A153FB6E62160696B /* urlrequest_client_cpptoc.cc */; };
 		7E9E53F9616772C333B53648 /* scheme_registrar_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 55748D6E9030E3B6C840CF5D /* scheme_registrar_ctocpp.cc */; };
 		7EFAFB1448C87C8DE173F944 /* app_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 526E2A18DDBBC48588F9C5D1 /* app_cpptoc.cc */; };
-		8094DACA8E9D03B15276A209 /* client_app_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC33590C4ECC150F9CD14493 /* client_app_mac.mm */; };
+		8484A06C887C8690FCE9EB7D /* liblibgrip.dylib in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/MacOS/ */ = {isa = PBXBuildFile; fileRef = 5C8DD3B601FB6393BD076DF7 /* liblibgrip.dylib */; };
 		8A8725F3ABF0A377FE9C4FAD /* download_item_callback_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EF69DC43B761F52B1162229 /* download_item_callback_ctocpp.cc */; };
 		8ACB3E753E4B0B4F2D3AA503 /* focus_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DCD932088538C6B67BF9D /* focus_handler_cpptoc.cc */; };
 		8B08D82804E3AF6B56209362 /* string_visitor_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 728F974FA38A31AFD1EBA1ED /* string_visitor_cpptoc.cc */; };
@@ -88,11 +104,11 @@
 		8F03DB06DAEB3FCC64DBB7F8 /* stream_reader_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1BE21DEA53CCCB6F82B61230 /* stream_reader_ctocpp.cc */; };
 		8FD55C97E1DE2A9B39F63205 /* domvisitor_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 60226CEE12BF2260A17F2328 /* domvisitor_cpptoc.cc */; };
 		9286827D87326B48CDA87B37 /* request_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = B5F6DEF7A5E722606EFDD579 /* request_handler_cpptoc.cc */; };
-		92D1A00BA8DD26C04841665A /* brackets.icns in Resources */ = {isa = PBXBuildFile; fileRef = 749E5239635519A330E75891 /* brackets.icns */; };
 		92FD20DDFF7CEB92E760C991 /* browser_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 380F6E9056AE039AA8A492DD /* browser_ctocpp.cc */; };
 		9832A7870C1EDCCCFF6C9DC4 /* scheme_handler_factory_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = D1DE62EC2EB883C39E54C7BA /* scheme_handler_factory_cpptoc.cc */; };
-		98D7CA892DCE9560817D8DA3 /* client_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C262FF082FED71CE8963FDD5 /* client_app.cpp */; };
+		98E596F2E27653383450173E /* appshell_extensions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41FB3563A8DCA978ABCB8F0 /* appshell_extensions.cpp */; };
 		990947BBC7343DE4AB4BAB0C /* write_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 67053B18354E8CC9611FF337 /* write_handler_cpptoc.cc */; };
+		99975351BA068DD713EC4CFF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117371CDDB44775B39107AA8 /* AppKit.framework */; };
 		99CA415A86381C3A1CD4786B /* cef_zip_archive.cc in Sources */ = {isa = PBXBuildFile; fileRef = EE7BB11CB542B7D63E79B9CA /* cef_zip_archive.cc */; };
 		9EC4B34191B8155172DD6595 /* download_item_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 95BDCEC0F98FD6A562EE821C /* download_item_ctocpp.cc */; };
 		A53BD3DB0E080310E710A5CE /* appshell_extensions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41FB3563A8DCA978ABCB8F0 /* appshell_extensions.cpp */; };
@@ -101,20 +117,21 @@
 		A7C00A73ED6CE468CB8A2DEF /* client_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C262FF082FED71CE8963FDD5 /* client_app.cpp */; };
 		AB081BE46ED66D36C42D7D60 /* post_data_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB14594CDA494499E58C80 /* post_data_ctocpp.cc */; };
 		AB7A2C73FD4D64791093B536 /* browser_host_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8ED02D6DE78A19F90319F518 /* browser_host_ctocpp.cc */; };
-		ABA1F3972217F5082F33E0A4 /* client_switches.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CB166DE5C11F00828B7B417 /* client_switches.cpp */; };
-		B0DDE91F41250836E3EC6D6F /* ffmpegsumo.so in Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */ = {isa = PBXBuildFile; fileRef = 960AF2FA67AD34478B16E1FE /* ffmpegsumo.so */; };
+		B02D400EBC01195906E1E1B3 /* client_switches.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CB166DE5C11F00828B7B417 /* client_switches.cpp */; };
+		B03EA5DDAE462FF700848738 /* libcef.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B65894845851B9D3DEE6BD03 /* libcef.dylib */; };
 		B335BA5FA3951D47696662CB /* client_switches.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CB166DE5C11F00828B7B417 /* client_switches.cpp */; };
 		B96ABD2F9B79A2646CC7951B /* browser_process_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 23BF419323364B2700BD1AF4 /* browser_process_handler_cpptoc.cc */; };
 		B9B6E151D671D73B99611F36 /* domnode_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7644365DE7CC78D2DEA79A85 /* domnode_ctocpp.cc */; };
-		BB10F73F618857F79C7F65D9 /* appshell_extensions.js in Resources */ = {isa = PBXBuildFile; fileRef = F7EB475CDCCC2A30AF8D4A0C /* appshell_extensions.js */; };
 		BB89173AA3CFC876A054FB7B /* display_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = EF2C2EC4E5A1D08B06CF0FD7 /* display_handler_cpptoc.cc */; };
 		BD01EF6C6486A5B613FA7017 /* web_plugin_info_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0C66A0123DAA2BBD73A2939C /* web_plugin_info_ctocpp.cc */; };
+		BDC422C7B87D809F8B031AE0 /* Grip Helper.app in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks */ = {isa = PBXBuildFile; fileRef = F385C90CCD7A277EC9FC6B9C /* Grip Helper.app */; };
 		C1E637FD616AE3950058FE96 /* proxy_handler_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3A8374DBB04156F6EF07C /* proxy_handler_cpptoc.cc */; };
+		C2B0CB30969A59B93853E527 /* client_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7F32E5943867A24A58C24C9 /* client_handler.cpp */; };
 		C307B48058592FA0A775CBE0 /* client_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 32AC2CDB85725E3715C728CB /* client_cpptoc.cc */; };
-		C5EBE4A85C81F593EDF064F5 /* cefclient_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E45EB29CAA66453661C6 /* cefclient_mac.mm */; };
 		C7429BF3C7C74CB98723F6C0 /* command_line_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = EB60AE270B721E13CF1126AD /* command_line_ctocpp.cc */; };
 		C90FB710D7B25572E80BFD69 /* v8accessor_cpptoc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 845EEC823278584B42AFB2B7 /* v8accessor_cpptoc.cc */; };
-		D44993FFF44DE7241797A865 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117371CDDB44775B39107AA8 /* AppKit.framework */; };
+		D3F7EAAEB77B8AA6AC108A49 /* cefclient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 522C920B68963035E6CE38FE /* cefclient.cpp */; };
+		D9630B0D5D5EEDFEB9AE2DA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB557E135D18D071AA200048 /* InfoPlist.strings */; };
 		DDA2289823F976BECC01755A /* menu_model_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86E19C99BCCDDA939F257FE0 /* menu_model_ctocpp.cc */; };
 		DFF56C4CCC0DF43679368430 /* response_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8637A80D02FB4C99759A9768 /* response_ctocpp.cc */; };
 		E1D8CE3AB1318012B1092D8C /* domevent_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3458504ADE6A6AF8C60A2C67 /* domevent_ctocpp.cc */; };
@@ -122,26 +139,60 @@
 		E9156E0146F1D5FB84858F35 /* resource_util_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58B75C30D7A89FCDAE335C06 /* resource_util_mac.mm */; };
 		EA2C6FE243973677C9A34585 /* cef_stream_resource_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = B245E8AA22D2D08343FA2259 /* cef_stream_resource_handler.cc */; };
 		EAABFC0C2A882B4FCE3F34D7 /* v8value_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = DF38EBD5037F4EEEE3AFF29D /* v8value_ctocpp.cc */; };
-		EB4A35C3C60BE898F8FB7EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB557E135D18D071AA200048 /* InfoPlist.strings */; };
 		ED97F6224162709FDF892B55 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117371CDDB44775B39107AA8 /* AppKit.framework */; };
 		F1E056DC74DBC0A17CFBB9FF /* cookie_manager_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B40527EE1F8F402382F97 /* cookie_manager_ctocpp.cc */; };
 		F287A235239E07C7511F19DE /* libcef.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B65894845851B9D3DEE6BD03 /* libcef.dylib */; };
 		F453746E3A07998455CA5CD2 /* libcef_dll_wrapper.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2C959542749DCE6EF708F135 /* libcef_dll_wrapper.cc */; };
-		F53B304C1BAF754B5D7CCEC2 /* appshell_extensions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41FB3563A8DCA978ABCB8F0 /* appshell_extensions.cpp */; };
 		F558BB943DC32BAA0AB011AA /* v8context_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = A95031741301CFE71BCF96C9 /* v8context_ctocpp.cc */; };
 		F7C604529546A7AC1B1AE933 /* stream_writer_ctocpp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7F60052DF0CFDC362E6B8 /* stream_writer_ctocpp.cc */; };
+		F898DFFA74D8FEEEA8B2A55F /* brackets.icns in Resources */ = {isa = PBXBuildFile; fileRef = 749E5239635519A330E75891 /* brackets.icns */; };
 		FF803CCD1CE21AD82FC1FB51 /* cef_byte_read_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 486533211D801204BD33CC8D /* cef_byte_read_handler.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		007691453BAC82BD790D7D17 /* PBXContainerItemProxy */ = {
+		15062154CC3605AFFA2BFE8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D7216A6BAC7FB1BDA5795C;
+			remoteInfo = libcef_dll_wrapper;
+		};
+		242350901CEB9E390A216CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99FD7130AD818306AEF66A8;
+			remoteInfo = "Grip Support";
+		};
+		3BFB63FD710D823A71BE0D51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3158A6C94970A5DA7A909FCB;
 			remoteInfo = appshell_helper_app;
 		};
-		3BFB63FD710D823A71BE0D51 /* PBXContainerItemProxy */ = {
+		4435DFAC0D3EA945F95C47A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D7216A6BAC7FB1BDA5795C;
+			remoteInfo = libcef_dll_wrapper;
+		};
+		5CCA62546ACF98A61E79054A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3158A6C94970A5DA7A909FCB;
+			remoteInfo = appshell_helper_app;
+		};
+		7C521D663C653BE06A898161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4828942326E72A936361B8A7;
+			remoteInfo = Grip;
+		};
+		BAA28B53707115C3EF4B3A47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
 			proxyType = 1;
@@ -155,21 +206,7 @@
 			remoteGlobalIDString = 98D7216A6BAC7FB1BDA5795C;
 			remoteInfo = libcef_dll_wrapper;
 		};
-		C85AF1D79A4810D00D9DE323 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9C06D3BACCDA23D9EFFD5F62;
-			remoteInfo = Brackets;
-		};
 		DE7443B8662B853615646FA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98D7216A6BAC7FB1BDA5795C;
-			remoteInfo = libcef_dll_wrapper;
-		};
-		F7D3F9C06B3CD59E71A68E63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5253C0B7AEFD0844ADB10927 /* Project object */;
 			proxyType = 1;
@@ -179,44 +216,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0826D3FFE350AD35775CA7B5 /* Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */ = {
+		02BED3DB7602AB865EC425D4 /* Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/";
+			dstPath = Grip.app/Contents/Frameworks;
 			dstSubfolderSpec = 16;
 			files = (
-				70FCD219696DE09CE668774D /* libcef.dylib in Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */,
-				B0DDE91F41250836E3EC6D6F /* ffmpegsumo.so in Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */,
+				BDC422C7B87D809F8B031AE0 /* Grip Helper.app in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks */,
 			);
-			name = "Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/";
+			name = "Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80244AACF9F0CDC98C063CC0 /* Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/ */ = {
+		601E313CFB48CF27BBCAB7AA /* Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/";
+			dstPath = "Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/";
 			dstSubfolderSpec = 16;
 			files = (
-				0A68B60BC08DCC934A1FC716 /* Resources in Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/ */,
+				5457316332862D046CF65CD5 /* libcef.dylib in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */,
+				0306F82D848A69C5992DE1F4 /* ffmpegsumo.so in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */,
 			);
-			name = "Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/";
+			name = "Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29D35926C1E9D38F9B067FB /* Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks */ = {
+		ABE41A27E6767CB578AB87CB /* Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/ */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Brackets.app/Contents/Frameworks;
+			dstPath = "Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/";
 			dstSubfolderSpec = 16;
 			files = (
-				46D9B49225F466566EE3711B /* Brackets Helper.app in Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks */,
+				7CD90BFCC891646B1A085A41 /* Resources in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/ */,
 			);
-			name = "Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks";
+			name = "Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4D346A335E3417FCD37CD0 /* Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/MacOS/ */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Grip.app/Contents/MacOS/;
+			dstSubfolderSpec = 16;
+			files = (
+				8484A06C887C8690FCE9EB7D /* liblibgrip.dylib in Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/MacOS/ */,
+			);
+			name = "Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/MacOS/";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0059EBE9A23AC53F8E6ABF7B /* cef_tuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_tuple.h; sourceTree = "<group>"; };
+		00AEF99DA56674F44E3FC9C5 /* release_defaults.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_defaults.gypi; path = ../Foreign/cef/1/chromium/src/build/internal/release_defaults.gypi; sourceTree = "<group>"; };
 		0294E88FCB4231EEE46371CD /* cef_app.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_app.h; sourceTree = "<group>"; };
 		02CADD4DAEB5003DEC0C3285 /* load_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = load_handler_cpptoc.cc; sourceTree = "<group>"; };
 		0382437F6A331E9E0F702DF1 /* render_process_handler_cpptoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = render_process_handler_cpptoc.h; sourceTree = "<group>"; };
@@ -245,13 +294,13 @@
 		1997CD04AB337EC638AB27BD /* cef_task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_task.h; sourceTree = "<group>"; };
 		19CC604904E69CAEC8059933 /* request_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = request_ctocpp.h; sourceTree = "<group>"; };
 		1AA9D7B2BAC56500C33E3807 /* geolocation_callback_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = geolocation_callback_ctocpp.h; sourceTree = "<group>"; };
-		1ACCBD564EAD4B712DDAC80E /* Brackets Helper.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "Brackets Helper.app"; sourceTree = "<group>"; };
 		1BE21DEA53CCCB6F82B61230 /* stream_reader_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stream_reader_ctocpp.cc; sourceTree = "<group>"; };
 		1C2AD7D46F7259207D0ABFC5 /* download_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = download_handler_cpptoc.cc; sourceTree = "<group>"; };
 		1CB166DE5C11F00828B7B417 /* client_switches.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client_switches.cpp; sourceTree = "<group>"; };
 		1D8AC35D07C39C6EF48857AE /* dictionary_value_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictionary_value_ctocpp.h; sourceTree = "<group>"; };
 		1F52365145FEA2FF0514A350 /* zip_reader_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zip_reader_ctocpp.h; sourceTree = "<group>"; };
 		1F6F4829729C0EBB8DF3F24E /* cef_cookie_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_cookie_capi.h; sourceTree = "<group>"; };
+		20F17333BC7AB41FC788AAA8 /* Grip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F8BDF05B7972A1B71BFEEE /* cef_client_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_client_capi.h; sourceTree = "<group>"; };
 		217F2C98268E9035AD8D9C14 /* cefclient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cefclient.h; sourceTree = "<group>"; };
 		21BF80B44E05111FDDF78FB8 /* post_data_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = post_data_ctocpp.h; sourceTree = "<group>"; };
@@ -266,6 +315,7 @@
 		253F4B9FF4F66890C0F139E7 /* cef_v8_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_v8_capi.h; sourceTree = "<group>"; };
 		26049B47F404C3F1C50C2D66 /* process_message_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = process_message_ctocpp.h; sourceTree = "<group>"; };
 		2652CE5DE434A7F76318E0E1 /* urlrequest_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = urlrequest_ctocpp.cc; sourceTree = "<group>"; };
+		2799E447148BA5EA544E536D /* common.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = common.gypi; path = ../Foreign/cef/1/chromium/src/build/common.gypi; sourceTree = "<group>"; };
 		2A8AA28318CAFF68ABFAD297 /* urlrequest_client_cpptoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = urlrequest_client_cpptoc.h; sourceTree = "<group>"; };
 		2AB635C6500A7B6F5FF96611 /* callback_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = callback_ctocpp.cc; sourceTree = "<group>"; };
 		2B3DCD932088538C6B67BF9D /* focus_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = focus_handler_cpptoc.cc; sourceTree = "<group>"; };
@@ -294,9 +344,9 @@
 		3CC475F841AE4C383D823582 /* scheme_registrar_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scheme_registrar_ctocpp.h; sourceTree = "<group>"; };
 		3D54FD7A210A996873EAAFC6 /* cef_response_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_response_capi.h; sourceTree = "<group>"; };
 		3DC13171A761012CCD1E0A35 /* menu_model_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = menu_model_ctocpp.h; sourceTree = "<group>"; };
-		3FE1A58D3A86DCAA30AB321F /* release_impl_official.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_impl_official.gypi; path = ../../../cef3/chromium/src/build/internal/release_impl_official.gypi; sourceTree = "<group>"; };
 		404F631C04BA625DD2D8EA94 /* cef_string_visitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_string_visitor.h; sourceTree = "<group>"; };
 		40825E3D7AE48941C5160E73 /* cef_types_wrappers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_types_wrappers.h; sourceTree = "<group>"; };
+		40FAE3E2D8DB3C2D0B97B51E /* release_impl_official.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_impl_official.gypi; path = ../Foreign/cef/1/chromium/src/build/internal/release_impl_official.gypi; sourceTree = "<group>"; };
 		41BC159F756E6B95822D89F1 /* cef_proxy_handler_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_proxy_handler_capi.h; sourceTree = "<group>"; };
 		42AB6344D83E4ACE37B5AEA7 /* proxy_handler_cpptoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proxy_handler_cpptoc.h; sourceTree = "<group>"; };
 		43AAF91C2A60F3BE2BB7B094 /* auth_callback_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = auth_callback_ctocpp.cc; sourceTree = "<group>"; };
@@ -323,8 +373,8 @@
 		58E3E30CB0F4B406DB37ACD9 /* cef_app_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_app_capi.h; sourceTree = "<group>"; };
 		5A30D7DB3E6147CCD132BF23 /* cef_jsdialog_handler_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_jsdialog_handler_capi.h; sourceTree = "<group>"; };
 		5C4BF2F9A653513AA5097263 /* cef_life_span_handler_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_life_span_handler_capi.h; sourceTree = "<group>"; };
+		5C8DD3B601FB6393BD076DF7 /* liblibgrip.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblibgrip.dylib; sourceTree = "<group>"; };
 		5CFAB8D52C1E7271A2071B62 /* resource_handler_cpptoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = resource_handler_cpptoc.h; sourceTree = "<group>"; };
-		5DB8407EA32311CE45160621 /* common.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = common.gypi; path = ../../../cef3/chromium/src/build/common.gypi; sourceTree = "<group>"; };
 		5E34FEFA93D3CDD186EB50E6 /* cef_web_plugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_web_plugin.h; sourceTree = "<group>"; };
 		5E363187DF9DE7D019FE69A2 /* ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ctocpp.h; sourceTree = "<group>"; };
 		5EB154496C1FDAE39862F41E /* resource_bundle_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = resource_bundle_handler_cpptoc.cc; sourceTree = "<group>"; };
@@ -377,6 +427,7 @@
 		86D8D74097D19E3DD4981DCF /* cef_scheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_scheme.h; sourceTree = "<group>"; };
 		86E19C99BCCDDA939F257FE0 /* menu_model_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = menu_model_ctocpp.cc; sourceTree = "<group>"; };
 		8965EDE2A9D643C3DC3D3F3A /* string_visitor_cpptoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = string_visitor_cpptoc.h; sourceTree = "<group>"; };
+		8A31459DF35EFE307F71BD23 /* run-always */ = {isa = PBXFileReference; lastKnownFileType = text; path = "run-always"; sourceTree = "<group>"; };
 		8A3C2FC45C53580743DDD98F /* v8handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = v8handler_cpptoc.cc; sourceTree = "<group>"; };
 		8ABFDFF093F6B71602851374 /* render_process_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = render_process_handler_cpptoc.cc; sourceTree = "<group>"; };
 		8D044E3620D9DD898CC187C0 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -390,11 +441,14 @@
 		911E95A12B592BC9F1A80668 /* urlrequest_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = urlrequest_ctocpp.h; sourceTree = "<group>"; };
 		92C96D3DB86D67B3238B1361 /* cef_callback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_callback.h; sourceTree = "<group>"; };
 		932B910099817CB226487AF4 /* cef_ptr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_ptr.h; sourceTree = "<group>"; };
+		93AA666BDA083265A5E5EDDA /* filename_rules.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = filename_rules.gypi; path = ../Foreign/cef/1/chromium/src/build/filename_rules.gypi; sourceTree = "<group>"; };
 		93B4F36427B200909D58F8F9 /* cef_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_base.h; sourceTree = "<group>"; };
 		94288A47CD51C8E44C1D9A7D /* cef_proxy_handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_proxy_handler.h; sourceTree = "<group>"; };
 		95AC844F2FA9D42891B3B718 /* appshell_extensions_mac.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = appshell_extensions_mac.mm; sourceTree = "<group>"; };
 		95BDCEC0F98FD6A562EE821C /* download_item_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = download_item_ctocpp.cc; sourceTree = "<group>"; };
 		960AF2FA67AD34478B16E1FE /* ffmpegsumo.so */ = {isa = PBXFileReference; lastKnownFileType = text; path = ffmpegsumo.so; sourceTree = "<group>"; };
+		97D9BB061C563B17EA5A33EF /* Grip Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grip Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACF95494295F25CC282D52F /* release.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release.gypi; path = ../Foreign/cef/1/chromium/src/build/release.gypi; sourceTree = "<group>"; };
 		9B2CD52AF418C3F07349AC48 /* cef_urlrequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_urlrequest.h; sourceTree = "<group>"; };
 		9B6B1C35B41FBDC6DDEFF52E /* read_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = read_handler_cpptoc.cc; sourceTree = "<group>"; };
 		9C2240AAB28AC105AD67ACFD /* cef_frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_frame.h; sourceTree = "<group>"; };
@@ -407,7 +461,6 @@
 		A32A0B81B32CD7515D447A32 /* cef_browser_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_browser_capi.h; sourceTree = "<group>"; };
 		A51598CF3816523F930B971E /* process_message_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = process_message_ctocpp.cc; sourceTree = "<group>"; };
 		A6750199B8F44D035964A22D /* cef_url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_url.h; sourceTree = "<group>"; };
-		A87F424CDE341AF80EDABBDB /* Brackets Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brackets Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90B310A1CB19C285E2E13FE /* libcef_dll_wrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcef_dll_wrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95031741301CFE71BCF96C9 /* v8context_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = v8context_ctocpp.cc; sourceTree = "<group>"; };
 		A9D8DC18EF620D9151373358 /* cef_request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_request.h; sourceTree = "<group>"; };
@@ -421,21 +474,20 @@
 		B079D80809064D7C62742C71 /* resource_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = resource_util.h; sourceTree = "<group>"; };
 		B245E8AA22D2D08343FA2259 /* cef_stream_resource_handler.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cef_stream_resource_handler.cc; sourceTree = "<group>"; };
 		B29E4E4DDA3106DAD2C8E473 /* cef_xml_reader_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_xml_reader_capi.h; sourceTree = "<group>"; };
+		B3C7929069746034D7E43267 /* release_impl.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_impl.gypi; path = ../Foreign/cef/1/chromium/src/build/internal/release_impl.gypi; sourceTree = "<group>"; };
 		B414D96AA61F736C19AAC183 /* jsdialog_handler_cpptoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsdialog_handler_cpptoc.h; sourceTree = "<group>"; };
 		B44A7BBBBA622F01A31903B0 /* cef_life_span_handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_life_span_handler.h; sourceTree = "<group>"; };
 		B49B6ECBB858840CCEC7CB50 /* cef_render_process_handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_render_process_handler.h; sourceTree = "<group>"; };
 		B4B09C1A48BFF86A37409501 /* cef_load_handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_load_handler.h; sourceTree = "<group>"; };
 		B5F6DEF7A5E722606EFDD579 /* request_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = request_handler_cpptoc.cc; sourceTree = "<group>"; };
 		B617EB0714F29F881C46BCC3 /* frame_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = frame_ctocpp.cc; sourceTree = "<group>"; };
-		B65894845851B9D3DEE6BD03 /* libcef.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcef.dylib; path = libcef.dylib; sourceTree = CONFIGURATION; };
+		B65894845851B9D3DEE6BD03 /* libcef.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcef.dylib; sourceTree = CONFIGURATION; };
 		B6A77EE456259DB56C750847 /* cookie_visitor_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cookie_visitor_cpptoc.cc; sourceTree = "<group>"; };
-		B802C1E1200A4AB8561EA891 /* release_defaults.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_defaults.gypi; path = ../../../cef3/chromium/src/build/internal/release_defaults.gypi; sourceTree = "<group>"; };
 		B9211C221356E0B082C4816A /* transfer_util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = transfer_util.cpp; sourceTree = "<group>"; };
 		B9EF704C714952FC84A12099 /* list_value_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list_value_ctocpp.h; sourceTree = "<group>"; };
 		BB1ECEF8D8325E6D39B9CB86 /* v8context_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = v8context_ctocpp.h; sourceTree = "<group>"; };
 		BD8E873CE33AB866D81F7634 /* resource_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = resource_handler_cpptoc.cc; sourceTree = "<group>"; };
 		BF858856394C760CADDE6C76 /* domvisitor_cpptoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = domvisitor_cpptoc.h; sourceTree = "<group>"; };
-		C0AA655B7F6EE5290D8A87D1 /* release_impl.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_impl.gypi; path = ../../../cef3/chromium/src/build/internal/release_impl.gypi; sourceTree = "<group>"; };
 		C257BA37696D74DBB1A51753 /* cef_dom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_dom.h; sourceTree = "<group>"; };
 		C262FF082FED71CE8963FDD5 /* client_app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client_app.cpp; sourceTree = "<group>"; };
 		C36233CB23734A273D2D0F79 /* libcef_dll_wrapper2.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libcef_dll_wrapper2.cc; sourceTree = "<group>"; };
@@ -461,10 +513,10 @@
 		DAD4B48AD993202919C1A2AA /* cef_version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_version.h; sourceTree = "<group>"; };
 		DAEEA3EAD74AA9E9CBCCF762 /* web_plugin_info_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = web_plugin_info_ctocpp.h; sourceTree = "<group>"; };
 		DB4FB68408BE37A1B88F3CC2 /* cef_load_handler_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_load_handler_capi.h; sourceTree = "<group>"; };
+		DB4FDC490A78DB1F63C53FCE /* liblibgrip.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblibgrip.dylib; path = "grip-lang/compiler/liblibgrip.dylib"; sourceTree = "<group>"; };
 		DBCCD68F95B5C2686B334A3E /* cef_pack_strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_pack_strings.h; sourceTree = "<group>"; };
 		DC9B45FF3104A97A34F07E2D /* callback_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = callback_ctocpp.h; sourceTree = "<group>"; };
 		DCBE7573C3F65FFB2C708103 /* response_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = response_ctocpp.h; sourceTree = "<group>"; };
-		DDBF10F0084EED3FE02CAF45 /* release.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release.gypi; path = ../../../cef3/chromium/src/build/release.gypi; sourceTree = "<group>"; };
 		DDE5B9937D98F3194E9E57B0 /* cef_browser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_browser.h; sourceTree = "<group>"; };
 		DE01625BB2393CCA7C48B467 /* cef_origin_whitelist_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_origin_whitelist_capi.h; sourceTree = "<group>"; };
 		DF38EBD5037F4EEEE3AFF29D /* v8value_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = v8value_ctocpp.cc; sourceTree = "<group>"; };
@@ -487,7 +539,6 @@
 		E93F80CFC491C3C09AFDD87B /* client_handler_mac.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = client_handler_mac.mm; sourceTree = "<group>"; };
 		EA5904BDEF20B893F87A0A96 /* cef_download_item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_download_item.h; sourceTree = "<group>"; };
 		EAD92ED581FB452EFBCF7D44 /* life_span_handler_cpptoc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = life_span_handler_cpptoc.cc; sourceTree = "<group>"; };
-		EB3CE077A76125344AF31275 /* Brackets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brackets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB60AE270B721E13CF1126AD /* command_line_ctocpp.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = command_line_ctocpp.cc; sourceTree = "<group>"; };
 		EC32618A1323B894948367CF /* client_app_delegates.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client_app_delegates.cpp; sourceTree = "<group>"; };
 		ED3214C2FF709B992FC13486 /* cef_download_handler_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_download_handler_capi.h; sourceTree = "<group>"; };
@@ -500,8 +551,8 @@
 		F1989B67661244ED4B756EE5 /* libcef.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcef.dylib; sourceTree = "<group>"; };
 		F1FE2B2760F4BBD496986BA1 /* cef_browser_process_handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_browser_process_handler.h; sourceTree = "<group>"; };
 		F31B254B0DC7D754A1D4D56C /* cef_resource_handler_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_resource_handler_capi.h; sourceTree = "<group>"; };
+		F385C90CCD7A277EC9FC6B9C /* Grip Helper.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "Grip Helper.app"; sourceTree = "<group>"; };
 		F41FB3563A8DCA978ABCB8F0 /* appshell_extensions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = appshell_extensions.cpp; sourceTree = "<group>"; };
-		F7AF4BC25240C2D0ABB7FAFF /* filename_rules.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = filename_rules.gypi; path = ../../../cef3/chromium/src/build/filename_rules.gypi; sourceTree = "<group>"; };
 		F7D894242D95F2E165D0ECF6 /* cef_request_capi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cef_request_capi.h; sourceTree = "<group>"; };
 		F7EB475CDCCC2A30AF8D4A0C /* appshell_extensions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = appshell_extensions.js; sourceTree = "<group>"; };
 		F8650F6813183C119C198C0F /* stream_writer_ctocpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stream_writer_ctocpp.h; sourceTree = "<group>"; };
@@ -517,16 +568,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A3B649B9964092D9F568094 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38CD0C26616461EA4317F161 /* libcef_dll_wrapper.a in Frameworks */,
-				D44993FFF44DE7241797A865 /* AppKit.framework in Frameworks */,
-				3ADEE14239E19398B287532E /* libcef.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		771E26A39A6A9A0D5C47BA82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,6 +582,18 @@
 				61A09DAC3E367C528215AB8B /* libcef_dll_wrapper.a in Frameworks */,
 				ED97F6224162709FDF892B55 /* AppKit.framework in Frameworks */,
 				F287A235239E07C7511F19DE /* libcef.dylib in Frameworks */,
+				153479F320FB9B044E5B1B74 /* liblibgrip.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EF0759DDAD6339C3D6E348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3804E52102FEE60F28255A /* libcef_dll_wrapper.a in Frameworks */,
+				99975351BA068DD713EC4CFF /* AppKit.framework in Frameworks */,
+				B03EA5DDAE462FF700848738 /* libcef.dylib in Frameworks */,
+				6FB95719839B3AFEBD72876E /* liblibgrip.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,9 +709,11 @@
 				4EA7327FBC4089F884180DF5 /* BUILT_PRODUCTS_DIR */,
 				0517C9F5925C93185D2F6922 /* CONFIGURATION */,
 				35B500E28B276F99CAD64B48 /* appshell */,
+				646A557E46BCD65F8A6392E3 /* grip-lang/compiler */,
 				C65393289D4F9D4FA1E34A42 /* include */,
 				8FABA0478FD4F1238835D02E /* libcef_dll */,
 				E1DBBBAE0A9D41B0609983D5 /* Resources */,
+				8A31459DF35EFE307F71BD23 /* run-always */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -666,7 +721,7 @@
 		4EA7327FBC4089F884180DF5 /* BUILT_PRODUCTS_DIR */ = {
 			isa = PBXGroup;
 			children = (
-				1ACCBD564EAD4B712DDAC80E /* Brackets Helper.app */,
+				F385C90CCD7A277EC9FC6B9C /* Grip Helper.app */,
 			);
 			name = BUILT_PRODUCTS_DIR;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -693,12 +748,20 @@
 			path = internal;
 			sourceTree = "<group>";
 		};
+		646A557E46BCD65F8A6392E3 /* grip-lang/compiler */ = {
+			isa = PBXGroup;
+			children = (
+				5C8DD3B601FB6393BD076DF7 /* liblibgrip.dylib */,
+			);
+			path = "grip-lang/compiler";
+			sourceTree = "<group>";
+		};
 		66AAB33BEF58D6F6431985A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB3CE077A76125344AF31275 /* Brackets.app */,
+				20F17333BC7AB41FC788AAA8 /* Grip.app */,
 				A90B310A1CB19C285E2E13FE /* libcef_dll_wrapper.a */,
-				A87F424CDE341AF80EDABBDB /* Brackets Helper.app */,
+				97D9BB061C563B17EA5A33EF /* Grip Helper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -709,12 +772,12 @@
 				4DB4E8FB15970721FCDF697D /* appshell.gyp */,
 				681025ADA511D62F06D077CD /* appshell_paths.gypi */,
 				4B7F088ADBCB1D96DBB5D4BB /* cef_paths.gypi */,
-				5DB8407EA32311CE45160621 /* common.gypi */,
-				F7AF4BC25240C2D0ABB7FAFF /* filename_rules.gypi */,
-				DDBF10F0084EED3FE02CAF45 /* release.gypi */,
-				B802C1E1200A4AB8561EA891 /* release_defaults.gypi */,
-				C0AA655B7F6EE5290D8A87D1 /* release_impl.gypi */,
-				3FE1A58D3A86DCAA30AB321F /* release_impl_official.gypi */,
+				2799E447148BA5EA544E536D /* common.gypi */,
+				93AA666BDA083265A5E5EDDA /* filename_rules.gypi */,
+				9ACF95494295F25CC282D52F /* release.gypi */,
+				00AEF99DA56674F44E3FC9C5 /* release_defaults.gypi */,
+				B3C7929069746034D7E43267 /* release_impl.gypi */,
+				40FAE3E2D8DB3C2D0B97B51E /* release_impl_official.gypi */,
 			);
 			name = Build;
 			sourceTree = "<group>";
@@ -965,6 +1028,7 @@
 			children = (
 				117371CDDB44775B39107AA8 /* AppKit.framework */,
 				B65894845851B9D3DEE6BD03 /* libcef.dylib */,
+				DB4FDC490A78DB1F63C53FCE /* liblibgrip.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -998,8 +1062,36 @@
 				6F20215C22CDC56E4857CDAD /* PBXTargetDependency */,
 			);
 			name = appshell_helper_app;
-			productName = "Brackets Helper";
-			productReference = A87F424CDE341AF80EDABBDB /* Brackets Helper.app */;
+			productName = "Grip Helper";
+			productReference = 97D9BB061C563B17EA5A33EF /* Grip Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4828942326E72A936361B8A7 /* Grip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C22BFFC12A1658876CD2B601 /* Build configuration list for PBXNativeTarget "Grip" */;
+			buildPhases = (
+				02BED3DB7602AB865EC425D4 /* Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks */,
+				ABE41A27E6767CB578AB87CB /* Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/ */,
+				EC4D346A335E3417FCD37CD0 /* Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/MacOS/ */,
+				601E313CFB48CF27BBCAB7AA /* Copy to $(BUILT_PRODUCTS_DIR)/Grip.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */,
+				A42A5C095F7324365364ED04 /* Resources */,
+				B44BDDE32A03C4C55A853889 /* Sources */,
+				F5EF0759DDAD6339C3D6E348 /* Frameworks */,
+				6F91936A5F88F22B1FC11761 /* Postbuild "Fix Framework Link" */,
+				0C120AA5D41262DC7E44EF24 /* Postbuild "Make More Helpers" */,
+				A6D0886D2F60CFCAEF950E90 /* Postbuild "Change Mach-O Flags" */,
+				C104FB63FD51D9F4F652FE6C /* Postbuild "Strip If Needed" */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				708EF8F2D4A3ED7B13EB5D62 /* PBXTargetDependency */,
+				5BE23A3622F0F6D3D0E121B9 /* PBXTargetDependency */,
+				77334E416C3AAF8E5EB9C199 /* PBXTargetDependency */,
+			);
+			name = Grip;
+			productName = Grip;
+			productReference = 20F17333BC7AB41FC788AAA8 /* Grip.app */;
 			productType = "com.apple.product-type.application";
 		};
 		98D7216A6BAC7FB1BDA5795C /* libcef_dll_wrapper */ = {
@@ -1018,32 +1110,6 @@
 			productReference = A90B310A1CB19C285E2E13FE /* libcef_dll_wrapper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9C06D3BACCDA23D9EFFD5F62 /* Brackets */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38D9C02495DFC7CF1E1F828F /* Build configuration list for PBXNativeTarget "Brackets" */;
-			buildPhases = (
-				A29D35926C1E9D38F9B067FB /* Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks */,
-				80244AACF9F0CDC98C063CC0 /* Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/ */,
-				0826D3FFE350AD35775CA7B5 /* Copy to $(BUILT_PRODUCTS_DIR)/Brackets.app/Contents/Frameworks/Chromium Embedded Framework.framework/Libraries/ */,
-				F294158618A9E308ED554DF4 /* Resources */,
-				0E1FF9A70DB7B9C0D7DFB067 /* Sources */,
-				2A3B649B9964092D9F568094 /* Frameworks */,
-				910380272B9E47B3102A393B /* Postbuild "Fix Framework Link" */,
-				ECB1315B12EB52F94CD3E283 /* Postbuild "Make More Helpers" */,
-				3B16BF13B8896C93428E0A35 /* Postbuild "Change Mach-O Flags" */,
-				B48AD603ED4EA00AB42E009A /* Postbuild "Strip If Needed" */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				40D8252EC0D130BEE02941BA /* PBXTargetDependency */,
-				A4B19D1AC00BF5E216E4BB4A /* PBXTargetDependency */,
-			);
-			name = Brackets;
-			productName = Brackets;
-			productReference = EB3CE077A76125344AF31275 /* Brackets.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1054,13 +1120,21 @@
 			};
 			buildConfigurationList = 38D0AF58DF00CF65E3AAE9DC /* Build configuration list for PBXProject "appshell" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = F47C63E7FD8ABDAE3E69A708;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F50A1D0F6933B94D3F4B8B15 /* All */,
-				9C06D3BACCDA23D9EFFD5F62 /* Brackets */,
+				4828942326E72A936361B8A7 /* Grip */,
+				D99FD7130AD818306AEF66A8 /* Grip Support */,
 				98D7216A6BAC7FB1BDA5795C /* libcef_dll_wrapper */,
 				3158A6C94970A5DA7A909FCB /* appshell_helper_app */,
 			);
@@ -1068,20 +1142,36 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F294158618A9E308ED554DF4 /* Resources */ = {
+		A42A5C095F7324365364ED04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D1A00BA8DD26C04841665A /* brackets.icns in Resources */,
-				EB4A35C3C60BE898F8FB7EC6 /* InfoPlist.strings in Resources */,
-				6B295097B29E8FB628815A1B /* MainMenu.xib in Resources */,
-				BB10F73F618857F79C7F65D9 /* appshell_extensions.js in Resources */,
+				F898DFFA74D8FEEEA8B2A55F /* brackets.icns in Resources */,
+				D9630B0D5D5EEDFEB9AE2DA5 /* InfoPlist.strings in Resources */,
+				14E417D3A5491063520C50CE /* MainMenu.xib in Resources */,
+				05F983DB5EDD5084379C3A3D /* appshell_extensions.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C120AA5D41262DC7E44EF24 /* Postbuild "Make More Helpers" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Postbuild \"Make More Helpers\"";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec tools/make_more_helpers.sh Frameworks Grip\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
 		27C0F1588A910AFD1BAFF6BD /* Postbuild "Strip If Needed" */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1096,22 +1186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "exec tools/strip_from_xcode\nexit 1\n";
-			showEnvVarsInLog = 0;
-		};
-		3B16BF13B8896C93428E0A35 /* Postbuild "Change Mach-O Flags" */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
-			);
-			name = "Postbuild \"Change Mach-O Flags\"";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "exec tools/change_mach_o_flags_from_xcode.sh\nexit 1\n";
 			showEnvVarsInLog = 0;
 		};
 		5FFA01E4430BFD752A7D9747 /* Postbuild "Change Mach-O Flags" */ = {
@@ -1130,7 +1204,7 @@
 			shellScript = "exec tools/change_mach_o_flags_from_xcode.sh\nexit 1\n";
 			showEnvVarsInLog = 0;
 		};
-		910380272B9E47B3102A393B /* Postbuild "Fix Framework Link" */ = {
+		6F91936A5F88F22B1FC11761 /* Postbuild "Fix Framework Link" */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1146,7 +1220,40 @@
 			shellScript = "exec install_name_tool -change @executable_path/libcef.dylib \"@executable_path/../Frameworks/Chromium Embedded Framework.framework/Libraries/libcef.dylib\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nexit 1\n";
 			showEnvVarsInLog = 0;
 		};
-		B48AD603ED4EA00AB42E009A /* Postbuild "Strip If Needed" */ = {
+		A6D0886D2F60CFCAEF950E90 /* Postbuild "Change Mach-O Flags" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Postbuild \"Change Mach-O Flags\"";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exec tools/change_mach_o_flags_from_xcode.sh\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+		C025827BB9B39120B2513267 /* Action "libgrip" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Action \"libgrip\"";
+			outputPaths = (
+				"grip-lang/compiler/liblibgrip.dylib",
+				"run-always",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo note: \"Building libgrip\"\nexec bash -l grip-lang/compiler/buildlibgrip.sh\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+		C104FB63FD51D9F4F652FE6C /* Postbuild "Strip If Needed" */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1175,47 +1282,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "exec install_name_tool -change @executable_path/libcef.dylib \"@executable_path/../../../../Frameworks/Chromium Embedded Framework.framework/Libraries/libcef.dylib\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nexit 1\n";
-			showEnvVarsInLog = 0;
-		};
-		ECB1315B12EB52F94CD3E283 /* Postbuild "Make More Helpers" */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
-			);
-			name = "Postbuild \"Make More Helpers\"";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "exec tools/make_more_helpers.sh Frameworks Brackets\nexit 1\n";
+			shellScript = "exec install_name_tool -change @executable_path/libcef.dylib \"@executable_path/../../../../Frameworks/Chromium Embedded Framework.framework/Libraries/libcef.dylib\" -change @executable_path/liblibgrip.dylib @executable_path/../../../../MacOS/liblibgrip.dylib \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nexit 1\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E1FF9A70DB7B9C0D7DFB067 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F53B304C1BAF754B5D7CCEC2 /* appshell_extensions.cpp in Sources */,
-				2CC364D7509BFD402CACB9ED /* cefclient.cpp in Sources */,
-				98D7CA892DCE9560817D8DA3 /* client_app.cpp in Sources */,
-				44E07FA909A2EC86622D67D8 /* client_app_delegates.cpp in Sources */,
-				486D6CF9DA73142E734968DC /* client_handler.cpp in Sources */,
-				ABA1F3972217F5082F33E0A4 /* client_switches.cpp in Sources */,
-				404420811CFE6F0A01D86D6E /* string_util.cpp in Sources */,
-				5B112E85C066A8D1E8EF68A4 /* appshell_extensions_mac.mm in Sources */,
-				8094DACA8E9D03B15276A209 /* client_app_mac.mm in Sources */,
-				C5EBE4A85C81F593EDF064F5 /* cefclient_mac.mm in Sources */,
-				7418E8ADE705BE89705C7438 /* client_handler_mac.mm in Sources */,
-				3DECED27298A79759F892390 /* resource_util_mac.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		875A5420A2A708BF88F1C1F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1231,6 +1303,25 @@
 				1480427BE493871EC039CDD8 /* process_helper_mac.cpp in Sources */,
 				E9156E0146F1D5FB84858F35 /* resource_util_mac.mm in Sources */,
 				2FD9C367A77EDCFBAA4E4A65 /* string_util.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44BDDE32A03C4C55A853889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E596F2E27653383450173E /* appshell_extensions.cpp in Sources */,
+				D3F7EAAEB77B8AA6AC108A49 /* cefclient.cpp in Sources */,
+				64A296DDF7E4B5E6352D302A /* client_app.cpp in Sources */,
+				0D924E2F753613F1DD457273 /* client_app_delegates.cpp in Sources */,
+				C2B0CB30969A59B93853E527 /* client_handler.cpp in Sources */,
+				B02D400EBC01195906E1E1B3 /* client_switches.cpp in Sources */,
+				1A8DD85BA786D67C38885B47 /* string_util.cpp in Sources */,
+				120EB29BD16DF0BFA6CDC5AE /* appshell_extensions_mac.mm in Sources */,
+				7A0FA9C14EA926F7676D8F83 /* client_app_mac.mm in Sources */,
+				1F874AE70E1110AAA305C213 /* cefclient_mac.mm in Sources */,
+				6A3EA7DD93937B9D2E054281 /* client_handler_mac.mm in Sources */,
+				26F26B5E49BC595EE0105BB7 /* resource_util_mac.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1315,15 +1406,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		40D8252EC0D130BEE02941BA /* PBXTargetDependency */ = {
+		4ECABF77131B881A38DD1458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4828942326E72A936361B8A7 /* Grip */;
+			targetProxy = 7C521D663C653BE06A898161 /* PBXContainerItemProxy */;
+		};
+		5BE23A3622F0F6D3D0E121B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 98D7216A6BAC7FB1BDA5795C /* libcef_dll_wrapper */;
-			targetProxy = F7D3F9C06B3CD59E71A68E63 /* PBXContainerItemProxy */;
+			targetProxy = 15062154CC3605AFFA2BFE8B /* PBXContainerItemProxy */;
 		};
 		6F20215C22CDC56E4857CDAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 98D7216A6BAC7FB1BDA5795C /* libcef_dll_wrapper */;
 			targetProxy = BBB0EF36FAA2190D30E5881D /* PBXContainerItemProxy */;
+		};
+		708EF8F2D4A3ED7B13EB5D62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99FD7130AD818306AEF66A8 /* Grip Support */;
+			targetProxy = 242350901CEB9E390A216CBC /* PBXContainerItemProxy */;
+		};
+		73F0585B6DC79B8C94A2A069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D7216A6BAC7FB1BDA5795C /* libcef_dll_wrapper */;
+			targetProxy = 4435DFAC0D3EA945F95C47A3 /* PBXContainerItemProxy */;
+		};
+		77334E416C3AAF8E5EB9C199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3158A6C94970A5DA7A909FCB /* appshell_helper_app */;
+			targetProxy = 5CCA62546ACF98A61E79054A /* PBXContainerItemProxy */;
 		};
 		8431C02624882CFEF805BF1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1335,15 +1446,10 @@
 			target = 3158A6C94970A5DA7A909FCB /* appshell_helper_app */;
 			targetProxy = 3BFB63FD710D823A71BE0D51 /* PBXContainerItemProxy */;
 		};
-		9821FE417F117A2AAAD77AA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9C06D3BACCDA23D9EFFD5F62 /* Brackets */;
-			targetProxy = C85AF1D79A4810D00D9DE323 /* PBXContainerItemProxy */;
-		};
-		A4B19D1AC00BF5E216E4BB4A /* PBXTargetDependency */ = {
+		C0496EA26827AF7DD3270BB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3158A6C94970A5DA7A909FCB /* appshell_helper_app */;
-			targetProxy = 007691453BAC82BD790D7D17 /* PBXContainerItemProxy */;
+			targetProxy = BAA28B53707115C3EF4B3A47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1367,82 +1473,12 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		036C1462BF68CDDA449DB46C /* Release */ = {
+		24EC1C5BC4967DCC62133CFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEAD_CODE_STRIPPING = YES;
-				GCC_CW_ASM_SYNTAX = NO;
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_PASCAL_STRINGS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
-				GCC_OBJC_CALL_CXX_CDTORS = YES;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"\"CHROMIUM_BUILD\"",
-					"\"ENABLE_ONE_CLICK_SIGNIN\"",
-					"\"ENABLE_REMOTING=1\"",
-					"\"ENABLE_WEBRTC=1\"",
-					"\"ENABLE_CONFIGURATION_POLICY\"",
-					"\"ENABLE_INPUT_SPEECH\"",
-					"\"ENABLE_NOTIFICATIONS\"",
-					"\"ENABLE_HIDPI=1\"",
-					"\"ENABLE_GPU=1\"",
-					"\"ENABLE_EGLIMAGE=1\"",
-					"\"USE_SKIA=1\"",
-					"\"ENABLE_TASK_MANAGER=1\"",
-					"\"ENABLE_WEB_INTENTS=1\"",
-					"\"ENABLE_EXTENSIONS=1\"",
-					"\"ENABLE_PLUGIN_INSTALLATION=1\"",
-					"\"ENABLE_PROTECTOR_SERVICE=1\"",
-					"\"ENABLE_SESSION_SERVICE=1\"",
-					"\"ENABLE_THEMES=1\"",
-					"\"ENABLE_BACKGROUND=1\"",
-					"\"ENABLE_PROMO_RESOURCE_SERVICE=1\"",
-					"\"ENABLE_AUTOMATION=1\"",
-					"\"USING_CEF_SHARED\"",
-					"\"__STDC_FORMAT_MACROS\"",
-					"\"NDEBUG\"",
-					"\"NVALGRIND\"",
-					"\"DYNAMIC_ANNOTATIONS_ENABLED=0\"",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				GCC_THREADSAFE_STATICS = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_VERSION = 4.2;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				HEADER_SEARCH_PATHS = .;
-				INFOPLIST_FILE = appshell/mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(SDKROOT)/System/Library/Frameworks",
-					"$(CONFIGURATION)",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				OTHER_CFLAGS = "-fno-strict-aliasing";
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					"-Wl,-search_paths_first",
-					"-Wl,-ObjC",
-					"-Wl,-pie",
-				);
-				PRODUCT_NAME = Brackets;
-				SHARED_PRECOMPS_DIR = "$(CONFIGURATION_BUILD_DIR)/SharedPrecompiledHeaders";
-				SYMROOT = xcodebuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-Wendif-labels",
-					"-Wextra",
-					"-Wno-unused-parameter",
-					"-Wno-missing-field-initializers",
-				);
-				WRAPPER_PREFIX = "";
+				PRODUCT_NAME = "Grip Support";
 			};
-			name = Release;
+			name = Debug;
 		};
 		67F570DCCCD44F1561F6C896 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1475,22 +1511,17 @@
 					"\"ENABLE_ONE_CLICK_SIGNIN\"",
 					"\"ENABLE_REMOTING=1\"",
 					"\"ENABLE_WEBRTC=1\"",
+					"\"ENABLE_P2P_APIS=1\"",
 					"\"ENABLE_CONFIGURATION_POLICY\"",
 					"\"ENABLE_INPUT_SPEECH\"",
 					"\"ENABLE_NOTIFICATIONS\"",
-					"\"ENABLE_HIDPI=1\"",
 					"\"ENABLE_GPU=1\"",
 					"\"ENABLE_EGLIMAGE=1\"",
 					"\"USE_SKIA=1\"",
-					"\"ENABLE_TASK_MANAGER=1\"",
+					"\"ENABLE_REGISTER_PROTOCOL_HANDLER=1\"",
 					"\"ENABLE_WEB_INTENTS=1\"",
-					"\"ENABLE_EXTENSIONS=1\"",
 					"\"ENABLE_PLUGIN_INSTALLATION=1\"",
-					"\"ENABLE_PROTECTOR_SERVICE=1\"",
-					"\"ENABLE_SESSION_SERVICE=1\"",
 					"\"ENABLE_THEMES=1\"",
-					"\"ENABLE_BACKGROUND=1\"",
-					"\"ENABLE_PROMO_RESOURCE_SERVICE=1\"",
 					"\"ENABLE_AUTOMATION=1\"",
 					"\"USING_CEF_SHARED\"",
 					"\"__STDC_FORMAT_MACROS\"",
@@ -1527,6 +1558,161 @@
 			};
 			name = Debug;
 		};
+		85A344ABAF20BEF5864849CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"\"CHROMIUM_BUILD\"",
+					"\"ENABLE_ONE_CLICK_SIGNIN\"",
+					"\"ENABLE_REMOTING=1\"",
+					"\"ENABLE_WEBRTC=1\"",
+					"\"ENABLE_P2P_APIS=1\"",
+					"\"ENABLE_CONFIGURATION_POLICY\"",
+					"\"ENABLE_INPUT_SPEECH\"",
+					"\"ENABLE_NOTIFICATIONS\"",
+					"\"ENABLE_GPU=1\"",
+					"\"ENABLE_EGLIMAGE=1\"",
+					"\"USE_SKIA=1\"",
+					"\"ENABLE_REGISTER_PROTOCOL_HANDLER=1\"",
+					"\"ENABLE_WEB_INTENTS=1\"",
+					"\"ENABLE_PLUGIN_INSTALLATION=1\"",
+					"\"ENABLE_THEMES=1\"",
+					"\"ENABLE_AUTOMATION=1\"",
+					"\"USING_CEF_SHARED\"",
+					"\"__STDC_FORMAT_MACROS\"",
+					"\"NDEBUG\"",
+					"\"NVALGRIND\"",
+					"\"DYNAMIC_ANNOTATIONS_ENABLED=0\"",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"./grip-lang/lib",
+				);
+				INFOPLIST_FILE = appshell/mac/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					"$(CONFIGURATION)",
+					"grip-lang/compiler",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = "-fno-strict-aliasing";
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"-Wl,-search_paths_first",
+					"-Wl,-ObjC",
+					"-Wl,-pie",
+				);
+				PRODUCT_NAME = Grip;
+				SHARED_PRECOMPS_DIR = "$(CONFIGURATION_BUILD_DIR)/SharedPrecompiledHeaders";
+				SYMROOT = xcodebuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-missing-field-initializers",
+				);
+				WRAPPER_PREFIX = "";
+			};
+			name = Release;
+		};
+		912543023992AD8A3E3071CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"\"CHROMIUM_BUILD\"",
+					"\"ENABLE_ONE_CLICK_SIGNIN\"",
+					"\"ENABLE_REMOTING=1\"",
+					"\"ENABLE_WEBRTC=1\"",
+					"\"ENABLE_P2P_APIS=1\"",
+					"\"ENABLE_CONFIGURATION_POLICY\"",
+					"\"ENABLE_INPUT_SPEECH\"",
+					"\"ENABLE_NOTIFICATIONS\"",
+					"\"ENABLE_GPU=1\"",
+					"\"ENABLE_EGLIMAGE=1\"",
+					"\"USE_SKIA=1\"",
+					"\"ENABLE_REGISTER_PROTOCOL_HANDLER=1\"",
+					"\"ENABLE_WEB_INTENTS=1\"",
+					"\"ENABLE_PLUGIN_INSTALLATION=1\"",
+					"\"ENABLE_THEMES=1\"",
+					"\"ENABLE_AUTOMATION=1\"",
+					"\"USING_CEF_SHARED\"",
+					"\"__STDC_FORMAT_MACROS\"",
+					"\"DYNAMIC_ANNOTATIONS_ENABLED=1\"",
+					"\"WTF_USE_DYNAMIC_ANNOTATIONS=1\"",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"./grip-lang/lib",
+				);
+				INFOPLIST_FILE = appshell/mac/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					"$(CONFIGURATION)",
+					"grip-lang/compiler",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = (
+					"-fno-strict-aliasing",
+					"-fstack-protector-all",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"-Wl,-search_paths_first",
+					"-Wl,-ObjC",
+					"-Wl,-pie",
+				);
+				PRODUCT_NAME = Grip;
+				SHARED_PRECOMPS_DIR = "$(CONFIGURATION_BUILD_DIR)/SharedPrecompiledHeaders";
+				SYMROOT = xcodebuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-missing-field-initializers",
+				);
+				WRAPPER_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A3AA0BB267D0ECDD19D97AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1547,22 +1733,17 @@
 					"\"ENABLE_ONE_CLICK_SIGNIN\"",
 					"\"ENABLE_REMOTING=1\"",
 					"\"ENABLE_WEBRTC=1\"",
+					"\"ENABLE_P2P_APIS=1\"",
 					"\"ENABLE_CONFIGURATION_POLICY\"",
 					"\"ENABLE_INPUT_SPEECH\"",
 					"\"ENABLE_NOTIFICATIONS\"",
-					"\"ENABLE_HIDPI=1\"",
 					"\"ENABLE_GPU=1\"",
 					"\"ENABLE_EGLIMAGE=1\"",
 					"\"USE_SKIA=1\"",
-					"\"ENABLE_TASK_MANAGER=1\"",
+					"\"ENABLE_REGISTER_PROTOCOL_HANDLER=1\"",
 					"\"ENABLE_WEB_INTENTS=1\"",
-					"\"ENABLE_EXTENSIONS=1\"",
 					"\"ENABLE_PLUGIN_INSTALLATION=1\"",
-					"\"ENABLE_PROTECTOR_SERVICE=1\"",
-					"\"ENABLE_SESSION_SERVICE=1\"",
 					"\"ENABLE_THEMES=1\"",
-					"\"ENABLE_BACKGROUND=1\"",
-					"\"ENABLE_PROMO_RESOURCE_SERVICE=1\"",
 					"\"ENABLE_AUTOMATION=1\"",
 					"\"USING_CEF_SHARED\"",
 					"\"__STDC_FORMAT_MACROS\"",
@@ -1575,11 +1756,15 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				HEADER_SEARCH_PATHS = .;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"./grip-lang/lib",
+				);
 				INFOPLIST_FILE = "appshell/mac/helper-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/System/Library/Frameworks",
 					"$(CONFIGURATION)",
+					"grip-lang/compiler",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "-fno-strict-aliasing";
@@ -1589,7 +1774,7 @@
 					"-Wl,-ObjC",
 					"-Wl,-pie",
 				);
-				PRODUCT_NAME = "Brackets Helper";
+				PRODUCT_NAME = "Grip Helper";
 				SHARED_PRECOMPS_DIR = "$(CONFIGURATION_BUILD_DIR)/SharedPrecompiledHeaders";
 				SYMROOT = xcodebuild;
 				USE_HEADERMAP = NO;
@@ -1603,85 +1788,6 @@
 				WRAPPER_PREFIX = "";
 			};
 			name = Release;
-		};
-		B08EA6B4BEEBECAA5E425251 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_CW_ASM_SYNTAX = NO;
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_PASCAL_STRINGS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
-				GCC_OBJC_CALL_CXX_CDTORS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"\"CHROMIUM_BUILD\"",
-					"\"ENABLE_ONE_CLICK_SIGNIN\"",
-					"\"ENABLE_REMOTING=1\"",
-					"\"ENABLE_WEBRTC=1\"",
-					"\"ENABLE_CONFIGURATION_POLICY\"",
-					"\"ENABLE_INPUT_SPEECH\"",
-					"\"ENABLE_NOTIFICATIONS\"",
-					"\"ENABLE_HIDPI=1\"",
-					"\"ENABLE_GPU=1\"",
-					"\"ENABLE_EGLIMAGE=1\"",
-					"\"USE_SKIA=1\"",
-					"\"ENABLE_TASK_MANAGER=1\"",
-					"\"ENABLE_WEB_INTENTS=1\"",
-					"\"ENABLE_EXTENSIONS=1\"",
-					"\"ENABLE_PLUGIN_INSTALLATION=1\"",
-					"\"ENABLE_PROTECTOR_SERVICE=1\"",
-					"\"ENABLE_SESSION_SERVICE=1\"",
-					"\"ENABLE_THEMES=1\"",
-					"\"ENABLE_BACKGROUND=1\"",
-					"\"ENABLE_PROMO_RESOURCE_SERVICE=1\"",
-					"\"ENABLE_AUTOMATION=1\"",
-					"\"USING_CEF_SHARED\"",
-					"\"__STDC_FORMAT_MACROS\"",
-					"\"DYNAMIC_ANNOTATIONS_ENABLED=1\"",
-					"\"WTF_USE_DYNAMIC_ANNOTATIONS=1\"",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				GCC_THREADSAFE_STATICS = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_VERSION = 4.2;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				HEADER_SEARCH_PATHS = .;
-				INFOPLIST_FILE = appshell/mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(SDKROOT)/System/Library/Frameworks",
-					"$(CONFIGURATION)",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				OTHER_CFLAGS = (
-					"-fno-strict-aliasing",
-					"-fstack-protector-all",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-headerpad_max_install_names",
-					"-Wl,-search_paths_first",
-					"-Wl,-ObjC",
-					"-Wl,-pie",
-				);
-				PRODUCT_NAME = Brackets;
-				SHARED_PRECOMPS_DIR = "$(CONFIGURATION_BUILD_DIR)/SharedPrecompiledHeaders";
-				SYMROOT = xcodebuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-Wendif-labels",
-					"-Wextra",
-					"-Wno-unused-parameter",
-					"-Wno-missing-field-initializers",
-				);
-				WRAPPER_PREFIX = "";
-			};
-			name = Debug;
 		};
 		D2C9C1E92A6B57DC76B20F3D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1713,22 +1819,17 @@
 					"\"ENABLE_ONE_CLICK_SIGNIN\"",
 					"\"ENABLE_REMOTING=1\"",
 					"\"ENABLE_WEBRTC=1\"",
+					"\"ENABLE_P2P_APIS=1\"",
 					"\"ENABLE_CONFIGURATION_POLICY\"",
 					"\"ENABLE_INPUT_SPEECH\"",
 					"\"ENABLE_NOTIFICATIONS\"",
-					"\"ENABLE_HIDPI=1\"",
 					"\"ENABLE_GPU=1\"",
 					"\"ENABLE_EGLIMAGE=1\"",
 					"\"USE_SKIA=1\"",
-					"\"ENABLE_TASK_MANAGER=1\"",
+					"\"ENABLE_REGISTER_PROTOCOL_HANDLER=1\"",
 					"\"ENABLE_WEB_INTENTS=1\"",
-					"\"ENABLE_EXTENSIONS=1\"",
 					"\"ENABLE_PLUGIN_INSTALLATION=1\"",
-					"\"ENABLE_PROTECTOR_SERVICE=1\"",
-					"\"ENABLE_SESSION_SERVICE=1\"",
 					"\"ENABLE_THEMES=1\"",
-					"\"ENABLE_BACKGROUND=1\"",
-					"\"ENABLE_PROMO_RESOURCE_SERVICE=1\"",
 					"\"ENABLE_AUTOMATION=1\"",
 					"\"USING_CEF_SHARED\"",
 					"\"__STDC_FORMAT_MACROS\"",
@@ -1740,11 +1841,15 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				HEADER_SEARCH_PATHS = .;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"./grip-lang/lib",
+				);
 				INFOPLIST_FILE = "appshell/mac/helper-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/System/Library/Frameworks",
 					"$(CONFIGURATION)",
+					"grip-lang/compiler",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = (
@@ -1757,7 +1862,7 @@
 					"-Wl,-ObjC",
 					"-Wl,-pie",
 				);
-				PRODUCT_NAME = "Brackets Helper";
+				PRODUCT_NAME = "Grip Helper";
 				SHARED_PRECOMPS_DIR = "$(CONFIGURATION_BUILD_DIR)/SharedPrecompiledHeaders";
 				SYMROOT = xcodebuild;
 				USE_HEADERMAP = NO;
@@ -1776,6 +1881,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = All;
+			};
+			name = Release;
+		};
+		F0E8194FFB73E1D3C0E6F21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Grip Support";
 			};
 			name = Release;
 		};
@@ -1800,22 +1912,17 @@
 					"\"ENABLE_ONE_CLICK_SIGNIN\"",
 					"\"ENABLE_REMOTING=1\"",
 					"\"ENABLE_WEBRTC=1\"",
+					"\"ENABLE_P2P_APIS=1\"",
 					"\"ENABLE_CONFIGURATION_POLICY\"",
 					"\"ENABLE_INPUT_SPEECH\"",
 					"\"ENABLE_NOTIFICATIONS\"",
-					"\"ENABLE_HIDPI=1\"",
 					"\"ENABLE_GPU=1\"",
 					"\"ENABLE_EGLIMAGE=1\"",
 					"\"USE_SKIA=1\"",
-					"\"ENABLE_TASK_MANAGER=1\"",
+					"\"ENABLE_REGISTER_PROTOCOL_HANDLER=1\"",
 					"\"ENABLE_WEB_INTENTS=1\"",
-					"\"ENABLE_EXTENSIONS=1\"",
 					"\"ENABLE_PLUGIN_INSTALLATION=1\"",
-					"\"ENABLE_PROTECTOR_SERVICE=1\"",
-					"\"ENABLE_SESSION_SERVICE=1\"",
 					"\"ENABLE_THEMES=1\"",
-					"\"ENABLE_BACKGROUND=1\"",
-					"\"ENABLE_PROMO_RESOURCE_SERVICE=1\"",
 					"\"ENABLE_AUTOMATION=1\"",
 					"\"USING_CEF_SHARED\"",
 					"\"__STDC_FORMAT_MACROS\"",
@@ -1868,11 +1975,20 @@
 			defaultConfigurationIsVisible = 1;
 			defaultConfigurationName = Debug;
 		};
-		38D9C02495DFC7CF1E1F828F /* Build configuration list for PBXNativeTarget "Brackets" */ = {
+		43FAE2C83C367129D58E25D5 /* Build configuration list for PBXAggregateTarget "Grip Support" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B08EA6B4BEEBECAA5E425251 /* Debug */,
-				036C1462BF68CDDA449DB46C /* Release */,
+				24EC1C5BC4967DCC62133CFD /* Debug */,
+				F0E8194FFB73E1D3C0E6F21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		C22BFFC12A1658876CD2B601 /* Build configuration list for PBXNativeTarget "Grip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912543023992AD8A3E3071CD /* Debug */,
+				85A344ABAF20BEF5864849CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 1;
 			defaultConfigurationName = Debug;
