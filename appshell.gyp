@@ -62,7 +62,11 @@
           'action_name': 'libgrip',
           'message': "Building libgrip",
           'inputs': [],
-          'outputs': [ 'grip-lang/compiler/liblibgrip.dylib', 'run-always' ],
+          'conditions': [
+            ['OS=="win"', { 'outputs': [ 'grip-lang/compiler/liblibgrip.dll', 'run-always' ] } ],
+            ['OS=="mac"', { 'outputs': [ 'grip-lang/compiler/liblibgrip.dylib', 'run-always' ] } ],
+            ['OS=="linux"', { 'outputs': [ 'grip-lang/compiler/liblibgrip.so', 'run-always' ] } ]
+          ],
           'action': [ 'bash', '-l', 'grip-lang/compiler/buildlibgrip.sh' ]
         }
       ],
@@ -91,7 +95,7 @@
               '-lopengl32.lib',
               '-lglu32.lib',
               '-llib/$(ConfigurationName)/libcef.lib',
-              '-lgrip-lang/compiler/liblibgrip.lib'
+              '-lgrip-lang/compiler/libgrip.lib'
             ],
           },
           'sources': [

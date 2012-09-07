@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Brackets", "Brackets.vcxproj", "{6617FED9-C5D4-4907-BF55-A90062A6683F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Grip", "Grip.vcxproj", "{6617FED9-C5D4-4907-BF55-A90062A6683F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A9D6DC71-C0DC-4549-AEA0-3B15B44E86A9} = {A9D6DC71-C0DC-4549-AEA0-3B15B44E86A9}
 	EndProjectSection
